@@ -4,14 +4,33 @@
   "description": "A set of tools to help people censor their explict spotify playlists",
   "main": "app.js",
   "dependencies": {
-    "cookie-parser": "^1.4.3",
-    "express": "^4.16.3",
-    "querystring": "^0.2.0",
-    "request": "^2.85.0"
+    "boom": "^7.2.0",
+    "dotenv": "^5.0.1",
+    "hapi": "^17.3.1",
+    "hoek": "^5.0.3",
+    "joi": "^13.2.0",
+    "vision": "^5.3.2",
+    "wreck": "^14.0.2"
   },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "devDependencies": {
+    "code": "^5.2.0",
+    "cucumber": "^4.2.1",
+    "eslint": "^4.19.1",
+    "eslint-config-hapi": "^11.1.0",
+    "lab": "^15.4.1"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-hapi",
+    "parserOptions": {
+      "ecmaVersion": 8
+    },
+    "rules": {
+      "consistent-this": [
+        2,
+        "self",
+        "world"
+      ]
+    }
   },
   "repository": {
     "type": "git",
@@ -31,5 +50,8 @@
   "bugs": {
     "url": "https://github.com/MikenIke135/playlist-pacify/issues"
   },
-  "homepage": "https://github.com/MikenIke135/playlist-pacify#readme"
+  "homepage": "https://github.com/MikenIke135/playlist-pacify#readme",
+  "scripts": {
+    "start": "node app.js"
+  }
 }

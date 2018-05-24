@@ -12,6 +12,11 @@ const client_id = config.keys.client_id; // Your client id
 const client_secret = config.keys.client_secret; // Your secret
 const redirect_uri = config.keys.redirect_uri; // Your redirect uri
 
+// TODO: Make this a better error handler.
+if (client_id == "*** YOUR CLIENT ID HERE***") {
+  console.log('config file not set, errors expected')
+}
+
 var current_client_key = '';
 
 /**
